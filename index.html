@@ -1,16 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velvet Reverie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .container h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .description {
+            font-size: 18px;
+            color: #555;
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Section for perfume showcase -->
+    <div class="container">
+        <h1>Luxury Perfume</h1>
+        <img src="https://blenderartists.org/uploads/default/original/4X/a/3/5/a355ac668d1c09b5e0e6ceaa431a52e4464c9b23.jpeg" alt="Perfume Bottle">
+        <p class="description">Discover the essence of elegance with our latest fragrance. A blend of luxury and charm in every drop.</p>
+    </div>
+
+    <!-- Section for chatbot -->
     <h1>You can talk to our chatbot</h1>
-    
+
     <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "c96a0b80-047d-4164-8814-f0870fcc9a30",
-        apiHost: "https://tlaplus-floswise001.hf.space",
-    })
-</script>   
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "c96a0b80-047d-4164-8814-f0870fcc9a30",
+            apiHost: "https://tlaplus-floswise001.hf.space",
+        })
+    </script>
+</body>
 </html>
+
